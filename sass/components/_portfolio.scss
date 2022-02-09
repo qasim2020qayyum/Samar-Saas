@@ -1,0 +1,91 @@
+.portfolio {
+    height: 1200px;
+    border: solid white;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    &__button {
+        @include button;
+        left: 45%;
+        top: 0px;
+    }
+    &__survey {
+        font-size: 50px;
+        font-family: "Source Sans Pro", sans-serif;
+        color: $color-blue-dark;
+        margin-top: 70px;
+    }
+    &__menu {
+        height: 90px;
+        width: 85%;
+        background-color: #f1f0f8;
+        position: absolute;
+        top: 160px;
+        left: 110px;
+        border-radius: 55px;
+        &-lines {
+            height: 60px;
+            width: 95%;
+            position: absolute;
+            top: 29px;
+            left: 39px;
+            &-li {
+                display: inline;
+                padding-left: 60px;
+                font-family: "Source Sans Pro", sans-serif;
+                color: $color-blue-dark;
+                list-style: none;
+                font-size: 25px;
+                cursor: pointer;
+                transition: all 0.2s;
+                &:hover {
+                    color: $color-grey;
+                }
+                &-all {
+                    height: 40px;
+                    width: 120px;
+                    left: -4px;
+                    top:-6px;
+                    position: absolute;
+                    padding-top: 2px;
+                    background-color: #1f2471;
+                    color: $color-white;
+                    border-radius: 20px;
+                    &:hover {
+                        color: $color-grey;
+                    }
+                }
+            }
+        }
+    }
+    &__picture-box {
+        @include picture__box;
+        &-image-one {
+            @include portfolio;
+            &:hover {
+                @include hover__image;
+                border-radius: 90px 90px 90px 5px;
+            }
+        }
+        &-image-two {
+            @include portfolio;
+            left: 463px;
+            &:hover {
+                @include hover__image;
+                border-radius: 90px 90px 90px 90px;
+            }
+        }
+        &-image-three {
+            @include portfolio;
+            left: 897px;
+            &:hover {
+                @include hover__image;
+                border-radius: 90px 90px 5px 90px;
+            }
+        }
+    }
+    &__picture-box2 {
+        @include picture__box;
+        top: 733px;
+    }
+}

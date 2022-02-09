@@ -1,0 +1,110 @@
+.slider {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    &__image-box {
+        height: 120px;
+        width: 100%;
+        position: absolute;
+        &-1 {
+            @include pics;
+        }
+        &-2 {
+            @include pics;
+            left: 248px;
+        }
+        &-3 {
+            @include pics;
+            left: 480px;
+        }
+        &-4 {
+            @include pics;
+            left: 700px;
+        }
+        &-5 {
+            @include pics;
+            left: 915px;
+        }
+        &-6 {
+            @include pics;
+            left: 1132px;
+        }
+    }
+    &__pic {
+        height: 60px;
+        width: 100px;
+        margin-top: 15px;
+    }
+    &__background {
+        height: 400px;
+        width: 100%;
+        background-color: #896eff;
+        background-image: url(./../img/bg3.png);
+        background-attachment: fixed;
+        position: absolute;
+        top: 150px;
+        &__box {
+            height: 350px;
+            width: 100%;
+            border-radius: 10px;
+            position: absolute;
+            top: 20px;
+
+            &-1 {
+                @include box;
+            }
+            &-2 {
+                @include box;
+                left: 357px;
+                top: 100px;
+            }
+            &-3 {
+                @include box;
+                left: 687px;
+                top: 40px;
+            }
+            &-4 {
+                @include box;
+                left: 1015px;
+                top: 100px;
+            }
+            &__linked:hover {
+                box-shadow: 0 0 10px $box-shadow;
+                top: 0px;
+            }
+            &__linked2:hover {
+                top: 65px;
+                box-shadow: 0 0 10px $color-blue-dark2;;
+            }
+        }
+    }
+    &__clients {
+        font-size: 25px;
+        margin-top: 27px;
+        font-family: "poppins", sans-serif;
+    }
+    &__numbers {
+        font-size: 35px;
+        font-family: "Source Sans Pro", sans-serif;
+        color: #896eff;
+    }
+    &__laptop {
+        @include icon;
+        background-color: #ffa808;
+    }
+    &__rocket {
+        @include icon;
+        background-color: #5543d1;
+    }
+}
+.link:hover {
+    background-color: $color-purple;
+    color: white;
+}
+.fa-smile-beam {
+    @include icon;
+}
+.fa-glass-cheers {
+    @include icon;
+    background-color: #ff586e;
+}

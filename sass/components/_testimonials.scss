@@ -1,0 +1,94 @@
+.testimonial {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    background-color: #896eff;
+    background-image: url(./../img/bg3.png);
+    background-attachment: fixed;
+    &__box {
+        &-1 {
+            @include testimonial;
+            &:hover {
+                top: 120px;
+            }
+        }
+        &-2 {
+            @include testimonial;
+            left: 560px;
+            &:hover {
+                top: 120px;
+            }
+        }
+    }
+    &__text {
+        margin-top: 20px;
+        width: 390px;
+        font-size: 16px;
+        font-family: "poppins", sans-serif;
+        letter-spacing: 1px;
+        line-height: 20px;
+        margin-left: 30px;
+        color: #896eff;
+        border-bottom: solid rgb(173, 166, 166);
+        padding-bottom: 20px;
+    }
+    &__profile {
+        height: 90px;
+        width: 90px;
+        border: solid #896eff;
+        border-radius: 50px;
+        position: absolute;
+        left: 50px;
+        top: 170px;
+    }
+    &__about {
+        height: 90px;
+        width: 150px;
+        position: absolute;
+        top: 170px;
+        left: 150px;
+        display: inline;
+    }
+    &__name {
+        font-size: 30px;
+        color: $color-blue-dark;
+        font-family: "Source Sans Pro", sans-serif;
+    }
+    &__founder {
+        font-size: 17px;
+        color: #5543d1;
+        font-family: "poppins", sans-serif;
+        margin-top: 0px;
+    }
+    &__conclusion{
+        height:450px;
+        width:306px;
+        position: absolute;
+        top:40px;
+        left:1020px;
+        text-align: left;
+    }
+    &__button{
+        @include button ;
+    }
+    &__review{
+        font-size:50px;
+        color: white;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin-top:80px;
+        margin-left: 20px;
+    }
+    &__para{
+        font-size: 22px;
+        font-family: 'poppins', sans-serif;
+        margin-top: 20px;
+        color: white;
+        width:250px;
+        margin-left: 20px;
+    }
+}
+
+.fa-star {
+    color: rgb(255, 255, 0);
+    font-size: 20px;
+}

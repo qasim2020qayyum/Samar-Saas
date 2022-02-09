@@ -1,0 +1,106 @@
+.service {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    border: solid white;
+    text-align: center;
+    background-image: url(./../img/pic3.png);
+    &__button {
+        font-size: 18px;
+        font-family: "Source Sans Pro", sans-serif;
+        color: #896eff;
+        height: 35px;
+        width: 120px;
+        padding-top: 5px;
+        background-color: #f1f0f8;
+        text-align: center;
+        position: absolute;
+        cursor: pointer;
+        left: 45%;
+        top: 10px;
+        border-radius: 5px;
+    }
+    &__para {
+        font-size: 40px;
+        color: $color-blue-dark;
+        font-family: "Source Sans Pro", sans-serif;
+        margin-top: 60px;
+    }
+    &__research {
+        height: 450px;
+        width: 100%;
+        position: absolute;
+        top: 120px;
+    }
+    &__box {
+        &-one {
+            @include service;
+            &-icon-box {
+                @include service-icon;
+            }
+        }
+        &-two {
+            @include service;
+            left: 473px;
+
+            &-icon-box {
+                @include service-icon;
+                background-color: #ff586e;
+            }
+        }
+        &-three {
+            @include service;
+            left: 911px;
+            &-icon-box {
+                @include service-icon;
+                background-color: #029e76;
+            }
+        }
+    }
+    &-idea {
+        font-size: 25px;
+        font-family: "Source Sans Pro", sans-serif;
+        margin-top: 150px;
+        color: $color-blue-dark;
+    }
+    &-para {
+        font-size: 16px;
+        font-family: "poppins", sans-serif;
+        margin-top: 30px;
+        width: 340px;
+        color: #896eff;
+        margin-left: 20px;
+    }
+    &__hover:hover {
+        box-shadow: 0 0 10px $color-blue-dark2;
+        top: 0px;
+    }
+}
+
+      //icons//  
+
+
+.fa-briefcase {
+    font-size: 45px;
+    color: white;
+    height: 56px;
+    width: 60px;
+    margin-top: 20px;
+    background-color: #ffa808;
+}
+.fa-windows {
+    font-size: 45px;
+    color: white;
+    height: 56px;
+    width: 60px;
+    margin-top: 20px;
+    background-color: #ff586e;
+}
+.fa-chart-pie {
+    font-size: 45px;
+    color: white;
+    height: 56px;
+    width: 60px;
+    margin-top: 20px;
+    background-color: #029e76;
+}

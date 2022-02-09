@@ -1,0 +1,31 @@
+@import "./abstract/mixins";
+@import "./abstract/variable";
+
+//abstract files//
+
+@import "./base/base";
+@import "./base/utilities";
+
+//base files//
+
+@import "./components/animations";
+@import "./components/blog";
+@import "./components/button";
+@import "./components/card";
+@import "./components/design";
+@import "./components/feature";
+@import "./components/grid";
+@import "./components/news";
+@import "./components/plans";
+@import "./components/portfolio";
+@import "./components/sevice";
+@import "./components/slider";
+@import "./components/team";
+@import "./components/testimonials";
+
+//components files//
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/navbar";
+
+//layout files//

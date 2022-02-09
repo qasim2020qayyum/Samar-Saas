@@ -1,0 +1,96 @@
+.feature {
+    height: 700px;
+    width: 100%;
+    position: relative;
+    &__part {
+        &-one {
+            height: 700px;
+            width: 50%;
+            position: absolute;
+        }
+        &-two{
+            height: 700px;
+            width: 50%;
+            position: absolute;
+            left: 50%;
+        }
+    }
+    &__circle-div {
+        &-1 {
+            @include feature;
+            &:hover{
+                @include hover;
+            }
+        }
+        &-2 {
+            @include feature;
+            top: 260px;
+            left: 218px;
+            &:hover{
+                @include hover;
+                top:235px;
+            }
+        }
+        &-3 {
+            @include feature;
+            top: 460px;
+            left: 101px;
+            &:hover{
+                @include hover;
+                top:435px;
+            }
+        }
+    }
+    &__circle-box-one {
+        @include circle-box;
+    }
+    &__circle-box-two {
+        @include circle-box;
+        background-color: #ffa808;
+    }
+    &__circle-box-three {
+        @include circle-box;
+        background-color: $color-light-green;;
+    }
+
+    &__text-box {
+        height: 170px;
+        width: 360px;
+        position: absolute;
+        left: 140px;
+    }
+    &__ideas {
+        font-size: 30px;
+        font-family: "Source Sans Pro", sans-serif;
+        color: $color-blue-dark;
+    }
+    &__text {
+        font-size: 16px;
+        font-family: "poppins", sans-serif;
+        margin-top: 10px;
+        width: 340px;
+        color: #896eff;
+        margin-left: 20px;
+    }
+    &__picture{
+        animation:move2 5s infinite ease-in-out;
+        height:650px;
+    }
+    &__laptop {
+        font-size: 75px;
+        color: white;
+        margin-top: 32px;
+    }
+}
+
+.fa-lightbulb {
+    font-size: 75px;
+    color: white;
+    margin-top: 32px;
+}
+
+.fa-rocket {
+    font-size: 75px;
+    color: white;
+    margin-top: 32px;
+}

@@ -1,0 +1,80 @@
+.plan {
+    height: 950px;
+    width: 100%;
+    position: relative;
+    top: 51px;
+    border: solid white;
+    text-align: center;
+    &__rate {
+        font-size: 35px;
+        font-family: "poppins", sans-serif;
+        color: $color-blue-dark;
+    }
+    &__choose {
+        font-size: 55px;
+        font-family: "Source Sans Pro", sans-serif;
+        color: $color-blue-dark;
+        margin-top: 15px;
+    }
+    &__menu-div {
+        height: 700px;
+        width: 100%;
+        position: absolute;
+        top: 150px;
+        &-1 {
+            @include card-rates;
+            &:hover {
+               @include card-rates-hover;
+            }
+            &-li {
+                &-lines-head {
+                    font-size: 45px;
+                    font-family: "Source Sans Pro", sans-serif;
+                    margin-top: 15px;
+                    list-style: none;
+                }
+                &-lines {
+                    list-style: none;
+                    font-size: 19px;
+                    font-family: "poppins", sans-serif;
+                    line-height: 45px;
+                    width: 200px;
+                    margin-left: 100px;
+                }
+                &-dollar {
+                    font-size: 29px;
+                    font-family: "Montserrat", sans-serif;
+                }
+            }
+            &-start {
+                height: 58px;
+                width: 252px;
+                background-color: #896eff;
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                position: absolute;
+                left: 80px;
+                top: 550px;
+                padding-top: 17px;
+                border-radius: 15px;
+                font-size: 16px;
+                font-family: "poppins", sans-serif;
+            }
+        }
+        &-2{
+            @include card-rates;
+            left:461px;
+            &:hover {
+                @include card-rates-hover;
+             }
+        }
+        &-3{
+            @include card-rates;
+            left:895px;
+            &:hover {
+                @include card-rates-hover;
+             }
+        }
+    }
+}

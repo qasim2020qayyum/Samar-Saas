@@ -1,0 +1,165 @@
+.card {
+    perspective: 150rem;
+    position: relative;
+    height: 47rem;
+    margin-left: 1.8rem;
+
+    &__side {
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        left: 0;
+        backface-visibility: hidden;
+        width: 100%;
+        height: 60rem;
+        transition: all 0.8s ease;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    }
+    &__side-front {
+        background-color: $color-white;
+    }
+    &__side-back {
+        transform: rotateY(180deg);
+    }
+    &__side-back-1 {
+        background-image: linear-gradient(to right bottom, $color-orange, $color-orange-dark);
+    }
+    &__side-back-2 {
+        background-image: linear-gradient(to right bottom, $color-green-light, $color-light-green);
+    }
+    &__side-back-3 {
+        background-image: linear-gradient(to right bottom, $color-blue-light, $color-blue);
+    }
+    &:hover &__side-front {
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side-back {
+        transform: rotateY(0deg);
+    }
+    &__picture {
+        background-size: cover;
+        height: 32rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+    &__picture-1 {
+        background-image: linear-gradient(to right bottom, $color-orange, $color-orange-dark), url(../img/pic1.jpg);
+    }
+    &__picture-2 {
+        background-image: linear-gradient(to right bottom, $color-green-light, $color-light-green), url(../img/pic2.jpg);
+    }
+    &__picture-3 {
+        background-image: linear-gradient(to right bottom, $color-blue-light, $color-blue), url(../img/pic3.jpg);
+    }
+    &-heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 17rem;
+        right: 2rem;
+        width: 75%;
+    }
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+    }
+    &__heading-span-1 {
+        background-image: linear-gradient(to right bottom, $color-orange, $color-orange-dark);
+    }
+    &__heading-span-2 {
+        background-image: linear-gradient(to right bottom, $color-green-light, $color-light-green);
+    }
+    &__heading-span-3 {
+        background-image: linear-gradient(to right bottom, $color-blue-light, $color-blue);
+    }
+    &-details {
+        padding: 2rem;
+        font-size: 16px;
+    }
+    &-details ul {
+        list-style: none;
+        width: 80%;
+        margin: 0 auto;
+    }
+    &-details ul li {
+        text-align: center;
+        font-size: 19px;
+        padding: 1rem;
+        padding-right: 15px;
+    }
+    &-details ul li:not(:last-child) {
+        border-bottom: 1px solid $color-white;
+    }
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+    &__price-box {
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 8rem;
+    }
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
+    }
+    &__info{
+        position: absolute;
+        top:96px;
+    }
+
+}
+
+
+.icons{
+    height:60px;
+    width:190px;
+    position:absolute;
+    left:110px;
+    top:50px
+}
+.insta{
+    height:50px;
+    width:50px;
+    border-radius: 25px;
+    background-color:$color-white;
+    text-align: center;
+    position: absolute;
+}
+.bass{
+    color:s;
+    font-size: 30px;
+    margin-top:10px;
+    cursor: pointer;
+}
+.insta1{
+    height:50px;
+    width:50px;
+    border-radius: 25px;
+    background-color:$color-white;
+    text-align: center;
+    position: absolute;
+    left:70px;
+}
+.insta2{
+    height:50px;
+    width:50px;
+    border-radius: 25px;
+    background-color:$color-white;
+    text-align: center;
+    position: absolute;
+    left:140px;
+}

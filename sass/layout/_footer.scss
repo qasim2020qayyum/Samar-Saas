@@ -1,0 +1,175 @@
+.footer {
+    height: 800px;
+    width: 100%;
+    border: solid white;
+    position: relative;
+    top:125px;
+    background-image: url(./../img/pic3.png);
+    &__section-form {
+        height: 800px;
+        width: 50%;
+        position: absolute;
+        text-align: left;
+    }
+    &__button {
+        @include button;
+    }
+    &__heading {
+        font-size: 48px;
+        font-family: "Source Sans Pro", sans-serif;
+        color: $color-blue-dark;
+        margin-top: 145px;
+        margin-left: 28px;
+    }
+    &__form {
+        height: 550px;
+        width: 100%;
+        position: absolute;
+        top: 305px;
+        &-name {
+            @include form;
+            @include outline;
+        }
+        &-last-name {
+            @include form;
+            @include outline;
+            left: 400px;
+            top: 50px;
+        }
+        &-mail {
+            @include form;
+            @include outline;
+            left: 40px;
+            top: 130px;
+        }
+        &-phone {
+            @include form;
+            @include outline;
+            left: 400px;
+            top: 134px;
+        }
+        &-project {
+            @include form;
+            @include outline;
+            left: 40px;
+            top: 220px;
+        }
+        &-service {
+            @include form;
+            @include outline;
+            left: 400px;
+            top: 220px;
+        }
+        &-message {
+            @include form;
+            @include outline;
+            left: 40px;
+            top: 300px;
+           
+        }
+    }
+    &__last-section {
+        height: 65px;
+        width: 170px;
+        position: absolute;
+        top: 427px;
+        left: 123px;
+
+    }
+    &__submit{
+        font-size: 17px;
+        font-family: 'poppins', sans-serif;
+        margin-left: 55px;
+        margin-top: 12px;
+        color: $color-purple-light;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover{
+            color:$color-grey;
+
+        }
+    }
+    &__section-form-2{
+        height:800px;
+        width:50%;
+        position: absolute;
+        left:50%;
+        text-align: left;
+    }
+    &__image{
+        height:700px;
+        width:98%;
+        position: absolute;
+        top:50px;
+        animation:move2 5s infinite ease-in-out;
+    }
+}
+
+
+
+     //icon
+
+
+
+.icn {
+    font-size: 25px;
+    position: absolute;
+    left: 64px;
+    top: 59px;
+    color: $color-purple;
+}
+.icn1 {
+    font-size: 25px;
+    position: absolute;
+    left: 415px;
+    top: 59px;
+    color: $color-purple;
+}
+.icn2 {
+    font-size: 25px;
+    position: absolute;
+    left: 65px;
+    top: 142px;
+    color: $color-purple;
+}
+.icn3 {
+    font-size: 25px;
+    position: absolute;
+    left: 415px;
+    top: 141px;
+    color: $color-purple;
+}
+.icn4 {
+    font-size: 25px;
+    position: absolute;
+    left: 65px;
+    top: 229px;
+    color: $color-purple;
+}
+.icn5 {
+    font-size: 25px;
+    position: absolute;
+    left: 415px;
+    top: 230px;
+    color: $color-purple;
+}
+.icn6 {
+    font-size: 25px;
+    position: absolute;
+    left: 65px;
+    top: 310px;
+    color: $color-purple;
+}
+.fa-angle-right {
+    font-size: 30px;
+    width: 50px;
+    padding-left: 18px;
+    padding-top: 10px;
+    border-radius: 30px;
+    height: 50px;
+    background-color: $color-purple-light;
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    transition: all .2s;
+}

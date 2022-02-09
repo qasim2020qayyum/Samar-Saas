@@ -1,0 +1,92 @@
+.blog {
+    height: 800px;
+    width: 100%;
+    position: relative;
+    border: solid transparent;
+    text-align: center;
+    top:95px;
+    &__button {
+        @include button2;
+    }
+    &__heading {
+        font-size: 50px;
+        font-family: "Source Sans Pro", sans-serif;
+        color: $color-blue-dark;
+        margin-top: 70px;
+    }
+    &__slide-box {
+        height: 575px;
+        width: 100%;
+        position: absolute;
+        top: 212px;
+        &-1 {
+            @include blog;
+            &:hover{
+                @include blog-hover;
+            }
+        }
+        &-2{
+            @include blog;
+            left:460px;
+            &:hover{
+                @include blog-hover;
+            }
+        }
+        &-3{
+            @include blog;
+            left:880px;
+            &:hover{
+                @include blog-hover;
+            }
+        }
+    }
+    &__wallpaper {
+        height: 250px;
+        width: 400px;
+    }
+    &__para {
+        &-1 {
+            font-size: 20px;
+            font-family: "Source Sans Pro", sans-serif;
+            margin-top: 15px;
+            color: $color-blue-dark;
+        }
+        &-2 {
+            font-size: 17px;
+            font-family: "poppins", sans-serif;
+            margin-top: 20px;
+            color: $color-purple;
+            margin-left: 20px;
+            padding-bottom: 45px;
+            width: 350px;
+            border-bottom: solid grey;
+        }
+    }
+    &__time{
+        height:60px;
+        width:230px;
+        position: absolute;
+        top: 458px;
+        left:16px;
+    }
+    &__date{
+        font-size: 18px;
+        font-family: 'Source Sans Pro', sans-serif;
+        margin-left: 55px;
+        margin-top:18px;
+    }
+}
+        //icons//
+
+.fa-comment{
+    font-size: 24px;
+    position: absolute;
+    left:250px;
+    top:477px;
+}
+.fa-clock{
+    font-size: 33px;
+    position: absolute;
+    left:20px;
+    top:10px;
+}

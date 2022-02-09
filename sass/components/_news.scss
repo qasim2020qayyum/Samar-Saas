@@ -1,0 +1,94 @@
+.news {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    background-image: url(./../img/background.png);
+    background-color: #896eff;
+    background-attachment: fixed;
+    &__box-one {
+        height: 500px;
+        width: 40%;
+        position: absolute;
+        text-align: center;
+        &-image {
+            height: 400px;
+            width: 450px;
+            margin-top: 30px;
+            animation: move2 5s infinite ease-in-out;
+        }
+    }
+    &__box-two {
+        height: 500px;
+        width: 50%;
+        position: absolute;
+        left: 47%;
+        text-align: left;
+        &-button {
+            @include button;
+        }
+        &-info {
+            font-size: 40px;
+            color: white;
+            font-family: "Source Sans Pro", sans-serif;
+            margin-top: 120px;
+            margin-left: 20px;
+        }
+        &-text{
+            font-size: 16px;
+            font-family: 'poppins', sans-serif;
+            margin-top: 20px;
+            width: 640px;
+            color: white;
+            margin-left: 20px;
+        }
+    }
+    &__mail {
+        height: 64px;
+        width: 569px;
+        border-radius: 45px;
+        color: black;
+        margin-top: 44px;
+        margin-left: 20px;
+        border: none;
+        padding-left: 20px;
+        &:focus{
+            outline:none;
+        }
+    }
+    &__button{
+        height: 68px;
+        width: 219px;
+        position: absolute;
+        left: 371px;
+        font-size: 15px;
+        padding-top: 23px;
+        border: solid #896eff;
+        text-decoration: none;
+        top: 357px;
+        transition:all .4s;
+        border-radius: 57px;
+        text-align: center;
+        &:hover{
+            background-color: #957DFF;
+            color:white;
+            box-shadow: 0 1rem 2rem rgba( black, .15);
+            transform:translateY(-2px);
+        }
+        &:active{
+            box-shadow: 0 .5rem 1rem rgba(black, .15);
+            transform:translateY(0px);
+        }
+        &::after{
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            border-radius: 10rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all .4s;
+        }
+    }
+}

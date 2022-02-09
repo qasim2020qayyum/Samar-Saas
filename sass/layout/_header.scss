@@ -1,0 +1,84 @@
+.header {
+    height: 700px;
+    width: 100%;
+    position: relative;
+    &__first {
+        height: 650px;
+        width: 100%;
+        position: absolute;
+        top: 19px;
+        background-color: #f1f0f8;
+        clip-path: polygon(0 0, 100% 0%, 100% 85%, 0 100%);
+        background-image: url(./../img/pic3.png);
+        &__text-box1 {
+            height: 600px;
+            width: 678px;
+            position: absolute;
+            text-align: left;
+            left: 30px;
+        }
+    }
+    &__ideas {
+        font-size: 18px;
+        color: #896eff;
+        font-family: "poppins", sans-serif;
+        margin-top: 150px;
+        margin-left: 20px;
+    }
+    &__heading {
+        margin-top: 10px;
+        margin-left: 20px;
+        font-size: 60px;
+        color: $color-blue-dark;
+        font-family: "Source Sans Pro", sans-serif;
+        &-span {
+            color: #896eff;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        color: #896eff;
+        margin-top: 15px;
+        margin-left: 20px;
+        width: 487px;
+        font-family: "poppins", sans-serif;
+    }
+    &__button {
+        height: 65px;
+        width: 170px;
+        position: absolute;
+        top: 477px;
+        left: 23px;
+        &__para {
+            font-size: 1.7rem;
+            margin-left: 5.5rem;
+            margin-top: 12px;
+            color: $color-purple-light;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+    }
+    &__pics {
+        height: 620px;
+        width: 713px;
+        position: absolute;
+        left: 520px;
+        animation: moveInright1 0.9s ease-in;
+        &-1 {
+            height: 450px;
+            width: 628px;
+            position: absolute;
+            left: 109px;
+            top: 75px;
+            animation: move2 5s infinite ease-in-out;
+        }
+        &-2 {
+            height: 450px;
+            width: 628px;
+            position: absolute;
+            left: 109px;
+            top: 75px;
+            animation: move1 5s infinite ease-in-out;
+        }
+    }
+}
